@@ -24,17 +24,38 @@ In timing diagram Q0 is changing as soon as the negative edge of clock pulse is 
 
 **Procedure**
 
-/* write all the steps invloved */
+1. Understand the Ripple Counter Behavior
+Inputs:
+
+clk: Clock signal driving the first flip-flop.
+reset: Asynchronous signal to reset all flip-flops to 0.
+Outputs:
+
+count: 4-bit binary value representing the counter state.
+Behavior:
+
+Each flip-flop toggles on the falling or rising edge of its clock.
+The first flip-flop (LSB) toggles on every clock pulse, and subsequent flip-flops toggle based on the output of the preceding flip-flop.
+
 
 **PROGRAM**
 
-/* Program for 4 Bit Ripple Counter and verify its truth table in quartus using Verilog programming.
+![DE ex12 code](https://github.com/user-attachments/assets/e7834987-13c6-4db4-8824-147e9507a567)
 
- Developed by: RegisterNumber:
-*/
+
+ Developed by: RAM PRASATH S RegisterNumber:24900195
+
 
 **RTL LOGIC FOR 4 Bit Ripple Counter**
 
+![DE ex12 diagram](https://github.com/user-attachments/assets/dafe13af-c4d5-4fcd-af25-b62fe98387f8)
+
+
 **TIMING DIGRAMS FOR 4 Bit Ripple Counter**
 
+![DE ex12 waveform](https://github.com/user-attachments/assets/27020a47-fa19-4b56-8199-46fcb9f8e034)
+
+
 **RESULTS**
+The implementation of  4 Bit Ripple Counter using verilog and validating their functionality using their functional tables
+
